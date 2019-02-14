@@ -1,0 +1,31 @@
+let size = 8;
+let line = 0;
+let myString = "";
+while(line < size){
+  let lineA = " ";
+  while(lineA.length < size){
+      lineA += "#";
+      if(lineA.length >= size){
+      break;
+      }
+      lineA += " ";
+  }
+  myString += lineA;
+  line++;
+  if(line >= size){
+  break;
+  }
+  myString += "\n";
+  let lineB = "#";
+  while(lineB.length < size){
+      lineB += " ";
+      if(lineB.length >= size){
+      break;
+      }
+    lineB += "#";
+  }
+  myString += lineB;
+  line++;
+  myString += "\n";
+}
+console.log(myString);
